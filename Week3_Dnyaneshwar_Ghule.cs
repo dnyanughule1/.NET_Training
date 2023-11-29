@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 
 class Item
 {
-    public static int lastID = 0; //for update id's when item is deleted
+    public static int lastID = 0; //for update id's when item was deleted
 
     public int ID { get; set; }
     public string Name { get; set; }

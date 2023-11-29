@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualBasic;
 using System.Collections.Generic;
 
-internal class Program
+internal class Week2_Dnyaneshwar_Ghule
 {
     public static void Main(string[] args)
     {

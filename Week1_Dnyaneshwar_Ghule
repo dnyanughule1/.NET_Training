@@ -1,0 +1,103 @@
+1. Write a program to take the user's name as input and
+display a greeting message with their name.
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Enter username");
+        string str = Console.ReadLine();
+
+        Console.WriteLine("Hello " + str + " Welcome to our program.");
+    }
+}
+
+
+
+2. Write a program to prompt the user for two numbers 
+and then print the square of sum of numbers.
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Enter num1");
+        var myint1 = Console.ReadLine(); 
+        int num1 = Convert.ToInt32(myint1);
+
+        Console.WriteLine("Enter num2");
+        var myint2 = Console.ReadLine();
+        int num2 = Convert.ToInt32(myint2);
+
+        int sum = num1 + num2;
+        int result = sum * sum;
+
+        Console.WriteLine("The square of the sum of two number is : " + result);
+    }
+}
+
+3. Write a program to Make simple calculator which which
+ takes two a numbers as an input. (add, subtract,
+ multiply, divide, modulus) 
+  Note: Print modulus value in decimals.
+
+internal class Program
+{
+    private static void Main(string[] args)
+    { 
+        Console.WriteLine("Enter First Number");
+        var n1 = Console.ReadLine();
+        int num1 = Convert.ToInt32(n1);
+
+        Console.WriteLine("Enter Second Number");
+        var n2 = Console.ReadLine();
+        int num2 = Convert.ToInt32(n2);
+
+        Console.WriteLine("Which operation you want to perform? (+,-,*,/,%)");
+        var op = Console.ReadLine();
+        char ch = Convert.ToChar(op);
+
+        switch(ch)
+        {
+            case '+':
+                Console.WriteLine("Addition of " + num1 + " and " + num2 + " is : " + (num1 + num2));
+                break;
+            case '-':
+                Console.WriteLine("Substraction of " + num1 + " and " + num2 + " is : " + (num1 - num2));
+                break;
+            case '*':
+                Console.WriteLine("Multiplication of " + num1 + " and " + num2 + " is : " + (num1 * num2));
+                break;
+            case '/':
+                try
+                {
+                    Console.WriteLine("Division of " + num1 + " and " + num2 + " is : " + (num1 / num2));
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine("Invalid Operation ( / by zero )");
+                }
+                break;
+            case '%':
+                double result = num1 % num2;
+                Console.WriteLine("Modulus of " + num1 + " and " + num2 + " is : " + result);
+                break;
+        }
+
+    }
+}
+
+
+4. Declare a string variable to store your favorite 
+color and print it.
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Please Enter Color");
+        string str = Console.ReadLine();
+
+        Console.WriteLine("My Favorite Color is : "+str);
+    }
+}
